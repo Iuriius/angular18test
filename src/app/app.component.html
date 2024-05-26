@@ -2,11 +2,25 @@
   <h2>Made with:</h2>
   <img src="favicon.ico" alt="angular">
   <h1>ANGULAR 18</h1>
-  <h2>Counter: {{counter}}</h2>
-  <div [ngClass]="{'flex': true}">
-    <button (click)="increment()" type="button">CLICK +1</button>
-    <button (click)="decrement()" type="button">CLICK -1</button>
-    <button (click)="reset()" type="button">RESET</button>
+  <h4>ver. 18.0.0</h4>
+  <br>
+  <h3>Zone.js section</h3>
+  <div [ngClass]="{'wrapper': true}">
+    <h2>Counter: {{counter}}</h2>
+    <div [ngClass]="{'flex': true}">
+      <button (click)="increment()" type="button">CLICK +1</button>
+      <button (click)="decrement()" type="button">CLICK -1</button>
+      <button (click)="reset()" type="button">RESET</button>
+    </div>
+  </div>
+  <h3>Signals section</h3>
+  <div [ngClass]="{'wrapper': true}">
+    <h2>Counter: {{kounter()}}</h2>
+    <div [ngClass]="{'flex': true}">
+      <button (click)="inkrement()" type="button">CLICK +1</button>
+      <button (click)="dekrement()" type="button">CLICK -1</button>
+      <button (click)="resetk()" type="button">RESET</button>
+    </div>
   </div>
 </main>
 

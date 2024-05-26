@@ -6,14 +6,18 @@ body {
 }
 
 body {
+    text-align: center;
+    align-content: center;
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    background-color: bisque;
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    color: darkblue;
+    background-color: #ffe999;
+    background-image:
+        radial-gradient(at 85% 20%, hsla(234, 97%, 70%, 1) 0px, transparent 50%),
+        radial-gradient(at 11% 51%, hsla(183, 75%, 61%, 1) 0px, transparent 50%),
+        radial-gradient(at 15% 23%, hsla(318, 92%, 75%, 1) 0px, transparent 50%),
+        radial-gradient(at 22% 87%, hsla(248, 86%, 75%, 1) 0px, transparent 50%),
+        radial-gradient(at 91% 51%, hsla(126, 70%, 77%, 1) 0px, transparent 50%),
+        radial-gradient(at 75% 91%, hsla(76, 90%, 67%, 1) 0px, transparent 50%),
+        radial-gradient(at 77% 82%, hsla(47, 61%, 79%, 1) 0px, transparent 50%);
 }

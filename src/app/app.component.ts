@@ -1,4 +1,4 @@
-import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NgClass } from '@angular/common';
 
@@ -12,7 +12,7 @@ import { NgClass } from '@angular/common';
 })
 export class AppComponent {
   title = 'angular18test';
-  counter = 0
+  counter = 0;
 
   increment() {
     this.counter = this.counter + 1;
@@ -21,6 +21,17 @@ export class AppComponent {
     this.counter = this.counter - 1;
   }
   reset() {
-    this.counter = 0
+    this.counter = 0;
+  }
+
+  kounter = signal(10);
+  inkrement() {
+    this.kounter.set(this.kounter() + 1);
+  }
+  dekrement() {
+    this.kounter.set(this.kounter() + 1);
+  }
+  resetk() {
+    this.kounter.set(0)
   }
 }

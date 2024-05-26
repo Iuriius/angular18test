@@ -1,3 +1,37 @@
 main {
     text-align: center;
 }
+
+button {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    color: brown;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+    &:active {
+        background-color: silver;
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.wrapper {
+    display: inherit;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    width: 50%;
+    border: 0.5rem solid lightcyan;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background: rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
