@@ -24,12 +24,12 @@ export class AppComponent {
     this.counter = 0;
   }
 
-  kounter = signal(10);
+  kounter = signal(0);
   inkrement() {
     this.kounter.set(this.kounter() + 1);
   }
   dekrement() {
-    this.kounter.set(this.kounter() + 1);
+    this.kounter.set(this.kounter() - 1);
   }
   resetk() {
     this.kounter.set(0)
